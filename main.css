@@ -366,11 +366,13 @@ a {
   }
 
 
-
+  html {
+    overflow-x: hidden;
+  }
   body {
     padding-top: 100px !important;
     width: auto!important;
-    overflow-x: hidden!important
+    overflow-x: hidden!important;
   }
   h3 {
     font-family: 'Montserrat', sans-serif;
@@ -384,6 +386,7 @@ a {
   h1 {
     font-size: 40px;
   }
+
   .caralynImg {
     height: 30%;
     margin-right: 0px !important;
@@ -415,7 +418,7 @@ a {
     width: 240px;
   }
   .myResume{
-    padding-bottom: 0px;
+    padding-bottom: 10px;
   }
   .resumeDesktopImg {
     display: none;
@@ -442,7 +445,7 @@ a {
     font-size: 35px;
   }
   .resume-container {
-    @include make-container();
+    @include make-container-fluid();
     width: 100%;
   }
   .resumeH2 {
@@ -491,4 +494,5 @@ a {
     margin-top: 5%;
     margin-bottom: 10%;
   }
+
 }
