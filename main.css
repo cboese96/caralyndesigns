@@ -295,7 +295,9 @@ a {
 .projectsLogoImg {
   height: 40%;
 }
-
+.projectsSection {
+  margin-bottom: 10%;
+}
 
 .footer {
   background-color: #0E3B43;
@@ -610,5 +612,8 @@ a {
 .desktopImg {
   height: 300px;
   margin-left: 13%;
+}
+.projectsSection {
+  margin-bottom: 0px;
 }
 }
