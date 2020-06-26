@@ -170,6 +170,12 @@ a {
   padding-left: 10%;
   font-size: 23px;
 }
+.resumeSubTitleLight2 {
+  color: #0E3B43;
+  font-weight: 300;
+  font-size: 23px;
+  text-align: center;
+}
 .resumeYear {
   display: inline-block;
   color: #0E3B43;
@@ -520,6 +526,11 @@ a {
     font-size: 18px;
     margin-bottom: 0px;
     margin-right: 20%;
+  }
+  .resumeSubTitleLight2 {
+    font-size: 18px;
+    margin-left: 10%;
+    margin-right: 10%;
   }
   .resumeYear {
     font-size: 15px;
