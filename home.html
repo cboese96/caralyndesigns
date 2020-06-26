@@ -1,0 +1,222 @@
+<!DOCTYPE HTML>
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+  <header>
+  <!-- desktop nav -->
+<nav id="desktopNav">
+  <div class="navbar navBar fixed-top">
+    <div class="nav-logo" id="logo">
+      <img src="img/logo.png" href="#logo" class="logoImg" alt="Caralyn Boese logo" width="20%">
+    </div>
+    <div class="justify-content-end">
+  <ul class="nav">
+<li class="nav-item">
+  <a class="nav-link" href="#about">about</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="#resume">resume</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="#contact">contact</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="#projects">projects</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+
+<!-- mobile nav -->
+<nav id="mobileNav">
+  <div class="menu">
+    <input type="checkbox" id="toggle">
+    <label for="toggle" class="nav-btn">
+      <i></i>
+      <i></i>
+      <i></i>
+    </label>
+
+    <div class="nav-logo">
+      <img src="img/logo.png" class="logoImg" alt="Caralyn Boese Logo" width="20%">
+    </div>
+
+    <ul class="menu-content">
+      <li><a href="#about">about</a></li>
+      <li><a href="#resume">resume</a></li>
+      <li><a href="#contact">contact</a></li>
+      <li><a href="#projects">projects</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+</header>
+
+
+<script>
+function checkScroll(){
+    var startY = $('.navBar').height() * .5; //The point where the navbar changes in px
+
+    if($(window).scrollTop() > startY){
+        $('.navBar').addClass("scrolled");
+    }else{
+        $('.navBar').removeClass("scrolled");
+    }
+}
+
+if($('.navBar').length > 0){
+    $(window).on("scroll load resize", function(){
+        checkScroll();
+    });
+}
+
+
+
+$("nav").find("a").click(function(e) {
+    e.preventDefault();
+    $("#toggle").prop({ checked: false });
+    var section = $(this).attr("href");
+    $("html, body").animate({
+        scrollTop: $(section).offset().top - 132
+    });
+});
+
+$("#logo").on("click", function() {
+    $(window).scrollTop();
+});
+
+
+
+</script>
+
+
+
+<!--- main header --->
+
+<div class="container-fluid mainHeader">
+  <div class="row">
+    <div class="col">
+      <div class="headerText">
+    <h2>Caralyn<br/>Boese</h2><br/>
+    <h3>UX/UI<br/>
+    front end<br/>
+    web designer</h3>
+    </div>
+      <img src="img/bioPhoto.jpg" class="caralynImg" alt="Caralyn Boese Image">
+    </div>
+  </div>
+</div>
+
+
+<!-- about -->
+
+<div id="about" class="container-fluid aboutMe">
+  <div class="row">
+    <div class="col">
+      <h1 class="aboutH1">A little about me</h1><br/>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <p class="aboutMeText">
+    Hi and welcome to my website!  My name is Caralyn, it’s nice to (digitally) meet you.  I’m a recent grad from the
+    University of Central Florida and I’m excited to grow and start my career in web design/digital media.  During
+    my time at UCF, I found my passion for UX/UI and front end web design along with graphic design.  Over the past
+    four years, I have mastered skills ranging from HTML, CSS, and multiple frameworks to adobe products and Microsoft
+    Word.<br/><br/>
+
+    Not only do I love creating beautifully designed websites that are user friendly and easy to navigate but, I also
+    enjoy making the graphics that go along with them.  Digital media isn’t just my career choice, but also my biggest
+    hobby in life!<br/><br/>
+
+    Besides all things web design, I also found that I have a strong skill-set in video editing, photoshop and writing
+    (my dad always said I know how to write a good, engaging story)!<br/><br/>
+
+    In my free time, I enjoy practicing my hand lettering and drawing skills and playing boardgames (my favorite being
+    Catan).  Oh, and of course loving up on my two adorable cats!<br/><br/>
+
+    Feel free to check out the rest of my site and contact me!  I am currently available for full time and
+    freelance work.<br/><br/>
+    <img src="img/caralynSignature.png" class="img-fluid signatureImg" alt="Caralyn Boese Signature" width="20%" height="20%">
+    </p>
+    </div>
+  </div>
+</div>
+
+
+<!-- resume -->
+
+<div id="resume" class="container-fluid myResume">
+  <div class="row">
+    <div class="col">
+      <h1 class="resumeH1 text-center">The Resume</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <img src="img/resume.png" class="resumeDesktopImg" alt="Caralyn Boese Resume">
+      <img src="img/resumeMobile.png" class="resumeMobileImg" alt="Caralyn Boese Resume">
+    </div>
+  </div>
+</div>
+
+
+
+<!-- contact -->
+<div id="contact" class="container-fluid contactMe">
+  <div class="row">
+    <div class="col">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+        <h1 class="contactH1">Contact Me!<br/>
+          <p class="contactP">
+          407.516.7099<br/>
+          </p>
+          <p class="contactP">
+          <a class="emailLink" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=cboese96@gmail.com" target="_blank">
+          cboese96@gmail.com</a><br/><br/>
+          <a href="https://www.linkedin.com/in/caralyn-boese-6aa770a3/"  target="_blank"><img src="img/linkedin.png" class="socialMedia" alt="linked in"></a>
+          <a href="https://www.instagram.com/caralynboese/" target="_blank"><img src="img/instagram.png" class="socialMedia" alt="instagram"></a>
+        </p>
+    </h1>
+    </div>
+  </div>
+</div>
+
+
+<!-- projects -->
+
+<div id="projects" class="container-fluid myProjects">
+  <div class="row">
+    <div class="col">
+      <h1 class="projectsH1">My Projects<br/>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <h1 class="projectsH1">UNDER CONSTRUCTION<br/>
+    </div>
+  </div>
+</div>
+
+
+<!-- footer -->
+<div class="footer text-center bottom">
+  <p class="footerText">
+  Created by Caralyn Boese ©
+</p>
+</div>
+
+
+</body>
+</HTML>

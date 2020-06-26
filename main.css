@@ -1,0 +1,382 @@
+body {
+  padding-top: 140px;
+  width: auto!important;
+  overflow-x: hidden!important
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+}
+h2 {
+  font-family: 'Lora', serif;
+  font-size: 80px;
+}
+h1 {
+  font-family: 'Lora', serif;
+  font-weight: 300;
+  font-size: 50px;
+}
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  color: #F5EEE8;
+}
+
+#mobileNav {
+  display: none;
+}
+.logoImg {
+  margin-left: 20px;
+}
+
+.nav-link {
+  color: #0E3B43;
+  margin-left: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+}
+
+.nav-link:hover {
+  color: #0E3B43;
+  text-decoration: none;
+}
+
+.navbar {
+  background-color: white;
+  box-shadow: 0 2px 10px -1px rgba(0,0,0,0.25);
+  width: 100%;
+}
+.navbar.scrolled {
+    background: white;
+    background: rgba(255, 255, 255, 0.90);
+}
+
+
+
+.container {
+  margin: 0px !important;
+  padding: 0px !important;
+  max-width: none !important;
+}
+.col {
+  margin: 0px !important;
+  padding: 0px !important;
+
+}
+
+
+.mainHeader{
+  background-color: #F5EEE8;
+  height: 600px;
+}
+.caralynImg {
+  height: 55%;
+  margin-top: 140px !important;
+  z-index: 4;
+  float: right;
+  margin-right: 10%;
+}
+.headerText {
+  background-color: white;
+  color: #0E3B43;
+  text-align: right;
+  box-shadow: 0 5px 5px -1px rgba(0,0,0,0.25);
+  margin-top: 110px !important;
+  width: 60%;
+  z-index: 2;
+  position: absolute;
+  padding-right: 20px !important;
+}
+
+
+
+
+.aboutH1 {
+  color: #0E3B43;
+  float: left;
+  margin-left: 12%;
+  margin-top: 60px;
+  margin-right: 20%;
+}
+.aboutMeText {
+  color: #0E3B43;
+  margin-left: 12%;
+  margin-right: 12%;
+  margin-top: 80px;
+}
+.signatureImg {
+  height: 150px;
+  width: 320px;
+}
+
+
+.myResume {
+  background-color: #F5EEE8;
+  margin-top: 5%;
+  z-index: 8;
+  padding-bottom: 5%;
+}
+.resumeH1 {
+  padding: 60px;
+  color: #0E3B43;
+  font-size: 55px;
+}
+.resumeMobileImg {
+  display: none;
+}
+.resumeDesktopImg {
+  display: block;
+  width: 75%;
+  box-shadow: 10px 11px 18px -10px rgba(0,0,0,0.75);
+}
+
+
+
+
+.contactMe {
+  background-color: #0E3B43;
+  box-shadow: -1px 0px 18px 0px rgba(0,0,0,0.75);
+}
+.contactH1 {
+  float: right;
+  margin-right: 25%;
+  text-align: right;
+  color: #F5EEE8;
+  margin-top: 5%;
+}
+.contactP {
+  color: #F5EEE8;
+  font-size: 30px;
+  margin-top: 20px;
+}
+.emailLink {
+  color: #F5EEE8;
+}
+.emailLink:hover {
+  font-weight: 500;
+  text-decoration: none;
+  color: #F5EEE8;
+}
+.socialMedia {
+  height: 100px;
+}
+
+
+.projectsH1 {
+  text-align: center;
+  color: #0E3B43;
+  margin-top: 5%;
+  font-size: 55px;
+  margin-bottom: 5%;
+}
+
+
+.footer {
+  background-color: #0E3B43;
+  color: #F5EEE8;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+
+
+@media screen and (max-width: 760px) {
+  .nav-link {
+    font-size: 13px;
+    margin-left: 0px;
+  }
+  #desktopNav {
+    display: none!important;
+  }
+  #mobileNav {
+    display: block!important;
+    position: fixed!important;
+    background-color: white;
+    opacity: 0.95;
+    box-shadow: 0 2px 10px -1px rgba(0,0,0,0.25);
+    margin-top: -100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    z-index: 100;
+    width: 100%;
+  }
+
+  #mobileNav input[type='checkbox'] {
+    display: none!important;
+  }
+
+  .nav-btn {
+    float: right;
+    display: block;
+    padding: 20px;
+    margin-right: 30px;
+    margin-top: 15px;
+  }
+
+  .nav-btn i {
+    display: block;
+    width: 2rem;
+    height: 4px;
+    background-color: #0E3B43 !important;
+  }
+
+  .nav-btn i:nth-child(2) {
+    margin-top: .3rem;
+    opacity: 1;
+  }
+
+  .nav-btn i:nth-child(3) {
+    margin-top: .3rem;
+  }
+
+  .nav-btn:hover,
+  a.active {
+    
+  }
+
+  .menu {
+    position: relative;
+  }
+
+  .menu-content {
+    display: none;
+    float: right;
+    clear: left;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu-content li a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    display: block;
+    padding: 40px;
+    color: #0E3B43;
+    text-decoration: none;
+    text-align: right;
+    font-weight: 700;
+  }
+
+  .menu-content li {
+    width: 100%;
+  }
+
+  .menu-content li:hover {
+    background-color: #e9e9e9;
+  }
+
+  #toggle ~ .nav-btn i {
+  transition: transform 0.2s ease-in-out;
+  }
+
+  #toggle:checked + .nav-btn i:nth-child(1) {
+    transform: translateY(.55rem) rotate(45deg)
+  }
+
+  #toggle:checked + .nav-btn i:nth-child(2) {
+    opacity: 0;
+  }
+
+  #toggle:checked + .nav-btn i:nth-child(3) {
+    transform: translateY(-.55rem) rotate(-45deg);
+  }
+
+  #toggle:checked ~ .menu-content {
+    display: block;
+  }
+
+  #toggle:not(:checked) {
+    display: none;
+  }
+
+
+
+  body {
+    padding-top: 100px !important;
+    width: auto!important;
+    overflow-x: hidden!important
+  }
+  h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+  }
+  h2 {
+    font-family: 'Lora', serif;
+    font-size: 50px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  .caralynImg {
+    height: 30%;
+    margin-right: 0px !important;
+    margin-top: 80px !important;
+    position: static;
+  }
+  .headerText {
+    margin-top: 70px;
+    width: 60%;
+    z-index: 2;
+    position: absolute;
+  }
+  .mainHeader{
+    height: 450px;
+    width: 100%;
+  }
+  .aboutH1 {
+    margin-right: 0%;
+    margin-top: 30px;
+    text-align: center;
+  }
+  .aboutMeText {
+    margin-top: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .signatureImg {
+    height: 100px;
+    width: 240px;
+  }
+  .myResume{
+    padding-bottom: 0px;
+  }
+  .resumeDesktopImg {
+    display: none;
+  }
+  .resumeMobileImg {
+    display: block;
+    width: 100%;
+  }
+  .contactH1 {
+    float: none;
+    margin-right: 0px;
+    text-align: center;
+    color: #F5EEE8;
+    margin-top: 5%;
+  }
+  .socialMedia {
+    height: 80px;
+  }
+  .myProjects {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .projectsH1 {
+    font-size: 35px;
+  }
+}
