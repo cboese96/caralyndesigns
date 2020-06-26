@@ -243,7 +243,7 @@ a {
   margin-top: 5%;
   font-size: 55px;
   text-align: left;
-  margin-left: 10%;
+  padding-left: 10%;
 }
 .projectsH2 {
   font-size: 40px;
@@ -552,7 +552,7 @@ a {
     border-top: 1px solid #0E3B43;
     margin-right: 0px;
 }
-
+/*
 .desktopImg {
   height: 60%;
   margin-left: 20%;
@@ -574,5 +574,21 @@ a {
 }
 #projects {
   height: 390px;
+} */
+
+.workImg {
+  margin-right: 0px;
+  height: 30%;
+  margin-top: 22%;
+}
+#projects {
+  height: 400px;
+}
+.projectsH1 {
+  margin-bottom: -30px;
+}
+.desktopImg {
+  height: 300px;
+  margin-left: 10%;
 }
 }
