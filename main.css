@@ -68,11 +68,7 @@ a {
   padding: 0px !important;
   max-width: none !important;
 }
-.col {
-  margin: 0px !important;
-  padding: 0px !important;
 
-}
 
 
 .mainHeader{
@@ -119,7 +115,10 @@ a {
   width: 320px;
 }
 
-
+.resume-container {
+  @include make-container();
+  width: 80%;
+}
 .myResume {
   background-color: #F5EEE8;
   margin-top: 5%;
@@ -127,7 +126,8 @@ a {
   padding-bottom: 5%;
 }
 .resumeH1 {
-  padding: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   color: #0E3B43;
   font-size: 55px;
 }
@@ -139,9 +139,66 @@ a {
   width: 75%;
   box-shadow: 10px 11px 18px -10px rgba(0,0,0,0.75);
 }
+.resumeH2 {
+  font-size: 35px;
+  color: #0E3B43;
+  padding-left: 10%;
+  padding-top: 10%;
+}
+.whiteBackground {
+  background-color: white;
+  box-shadow: 10px 11px 18px -10px rgba(0,0,0,0.75);
+}
+.line {
+  border-top: 1px solid #0E3B43;
+}
+.resumeSubTitleBold {
+  font-size: 26px;
+  font-weight: 500;
+  color: #0E3B43;
+  padding-left: 10%;
+  line-height: 95%;
+  display: inline-block;
+}
 
-
-
+.resumeSubTitleLight {
+  color: #0E3B43;
+  font-weight: 300;
+  padding-left: 10%;
+  font-size: 23px;
+}
+.resumeYear {
+  display: inline-block;
+  color: #0E3B43;
+  font-weight: 300;
+  text-align: right;
+  margin-right: 10%;
+}
+.resumeList {
+  color: #0E3B43;
+  font-weight: 300;
+  padding-left: 20%;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  list-style-type: circle !important;
+  margin-right: 20%;
+}
+.lineSplit {
+  display: flex;
+  justify-content: space-between;
+}
+.skillsList li {
+  margin-top: 5%;
+  list-style-type: none;
+  padding: 0px;
+}
+.skillItem {
+  margin-top: 5%;
+}
+.skillItemLast {
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
 
 .contactMe {
   background-color: #0E3B43;
@@ -170,8 +227,12 @@ a {
 .socialMedia {
   height: 100px;
 }
-
-
+.resumeMargin {
+  margin-top: 5%;
+}
+.resumeMargin2 {
+  margin-top: 13%;
+}
 .projectsH1 {
   text-align: center;
   color: #0E3B43;
@@ -379,5 +440,55 @@ a {
   }
   .projectsH1 {
     font-size: 35px;
+  }
+  .resume-container {
+    @include make-container();
+    width: 100%;
+  }
+  .resumeH2 {
+    font-size: 30px;
+    color: #0E3B43;
+    padding-left: 10%;
+    padding-top: 10%;
+  }
+
+  .resumeSubTitleBold {
+    font-size: 20px;
+    padding-left: 10%;
+    line-height: 100%;
+    margin-bottom: 0px !important;
+  }
+
+  .resumeSubTitleLight {
+    font-size: 18px;
+    margin-bottom: 0px;
+    margin-right: 20%;
+  }
+  .resumeYear {
+    font-size: 15px;
+    margin-right: 5%;
+    margin-left: 10%;
+  }
+  .resumeList {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    list-style-type: circle !important;
+    margin-right: 20%;
+  }
+  .lineSplit {
+    display: flex;
+    justify-content: space-between;
+  }
+  .skillsList li {
+    margin-top: 5%;
+    list-style-type: none;
+    padding: 0px;
+  }
+  .skillItem {
+    margin-top: 5%;
+  }
+  .skillItemLast {
+    margin-top: 5%;
+    margin-bottom: 10%;
   }
 }
