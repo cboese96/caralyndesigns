@@ -236,12 +236,54 @@ a {
 .resumeMargin2 {
   margin-top: 13%;
 }
+
+
 .projectsH1 {
-  text-align: center;
   color: #0E3B43;
   margin-top: 5%;
   font-size: 55px;
+  text-align: left;
+  margin-left: 10%;
+}
+.projectsH2 {
+  font-size: 40px;
+  color: #0E3B43;
+  padding-left: 10%;
+  padding-top: 5%;
+}
+.line2 {
+  border-top: 1px solid #0E3B43;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+.workImg {
+  height: 60%;
+  float: right;
+  margin-right: 10%;
+  margin-top: 5%;
+}
+.projects {
+  padding-right: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#projects {
+  height: 470px;
+}
+.line2 {
+
+}
+
+.projectRow {
   margin-bottom: 5%;
+}
+
+.desktopImg {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.projectsLogoImg {
+  height: 40%;
 }
 
 
@@ -251,6 +293,10 @@ a {
   padding-top: 40px;
   padding-bottom: 30px;
 }
+
+
+
+
 
 
 
@@ -505,4 +551,28 @@ a {
   .line {
     border-top: 1px solid #0E3B43;
     margin-right: 0px;
+}
+
+.desktopImg {
+  height: 60%;
+  margin-left: 20%;
+  margin-bottom: -20px;
+}
+
+.desktopCol {
+  margin-bottom: -30%;
+}
+.projectsH1 {
+  margin-bottom: -30px;
+}
+
+.workImg {
+  height: 40%;
+  margin-top: 10%;
+  margin-right: 0px;
+  margin-left: 20%;
+}
+#projects {
+  height: 390px;
+}
 }
