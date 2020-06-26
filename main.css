@@ -24,6 +24,10 @@ p {
   font-weight: 300;
 }
 
+.test_img {
+	display: block;
+}
+
 a {
   text-decoration: none;
   color: #F5EEE8;
@@ -598,6 +602,11 @@ a {
 .projectsH1 {
   margin-bottom: -30px;
 }
+.test_img {
+	display: block;
+	height: 300px;
+}
+
 .desktopImg {
   height: 300px;
   margin-left: 13%;
