@@ -28,7 +28,9 @@ a {
   text-decoration: none;
   color: #F5EEE8;
 }
-
+.col {
+  padding: 0px;
+}
 #mobileNav {
   display: none;
 }
@@ -405,6 +407,7 @@ a {
   }
   .aboutH1 {
     margin-right: 0%;
+    margin-left: 10%;
     margin-top: 30px;
     text-align: center;
   }
@@ -473,7 +476,7 @@ a {
   }
   .resumeYear {
     font-size: 15px;
-    margin-right: 5%;
+    margin-right: 10%;
     margin-left: 10%;
   }
   .resumeList {
