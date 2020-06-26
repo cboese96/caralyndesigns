@@ -418,7 +418,7 @@ a {
     width: 240px;
   }
   .myResume{
-    padding-bottom: 10px;
+    padding-bottom: 0px;
   }
   .resumeDesktopImg {
     display: none;
@@ -432,10 +432,11 @@ a {
     margin-right: 0px;
     text-align: center;
     color: #F5EEE8;
-    margin-top: 5%;
+    margin-top: 25%;
   }
   .socialMedia {
     height: 80px;
+    margin-bottom: 25%;
   }
   .myProjects {
     margin-top: 50px;
@@ -447,6 +448,9 @@ a {
   .resume-container {
     @include make-container-fluid();
     width: 100%;
+  }
+  .whiteBackground {
+    padding-bottom: 40px;
   }
   .resumeH2 {
     font-size: 30px;
