@@ -1,3 +1,6 @@
+.pointer-link {
+  cursor: pointer;
+}
 body {
   padding-top: 140px;
   width: auto!important;
