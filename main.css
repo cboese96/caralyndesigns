@@ -264,6 +264,14 @@ a {
   padding-left: 10%;
   padding-top: 5%;
 }
+.hdhMoodboard {
+  margin-top: 20px;
+  margin-top: 20px;
+  width: 100%;
+}
+.hdhDescrption {
+  margin-top: 20px;
+}
 .line2 {
   border-top: 1px solid #0E3B43;
   margin-right: 10%;
@@ -618,5 +626,9 @@ a {
 }
 .projectsSection {
   margin-bottom: 10%;
+}
+.hdhMoodboard {
+  margin-top: 20px;
+  margin-top: 20px;
 }
 }
